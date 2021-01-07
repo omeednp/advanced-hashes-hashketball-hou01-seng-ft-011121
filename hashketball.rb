@@ -140,6 +140,8 @@ def num_points_scored(name)
       
       team_value.each do | team_key, team_stat |
       
+      binding.pry
+      
         team_key.each do | player_key, player_stat |
       
           if player_stat = name
