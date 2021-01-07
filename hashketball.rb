@@ -132,5 +132,5 @@ end
 # Write code here
 
 def num_points_scored(name)
-  game_hash[]
+  game_hash.each do |
 end
