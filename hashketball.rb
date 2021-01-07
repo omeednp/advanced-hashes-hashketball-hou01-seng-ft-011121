@@ -132,6 +132,7 @@ end
 # Write code here
 
 def num_points_scored(name)
+  
   game_hash.each do | home_away, team_key |
     
     team_key.each do | player_key, stat |
