@@ -1,6 +1,7 @@
 # Write your code below game_hash
 
 require './hashketball.rb'
+require 'pry'
 
 def game_hash
   {
@@ -136,6 +137,8 @@ def num_points_scored(name)
   game_hash.each do | home_away, team_key |
     
     team_key.each do | player_key, stat |
+      
+      binding.pry
       
       if stat = name
         return game_hash[home_away][team_key][:points]
