@@ -134,11 +134,11 @@ end
 
 def num_points_scored(name)
   
-  game_hash.each do | home_away, team_key |
+  game_hash.each do | home_away, team_value |
     
-    team_key.each do | player_key, stat |
+    team_value.each do | team_key, team_stat |
       
-      binding.pry
+      team_key.each do | player_key, player_stat |
       
         if stat = name
         return game_hash[home_away][team_key][:points]
